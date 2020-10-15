@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<head>    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://rawcdn.githack.com/python-visualization/folium/master/folium/templates/leaflet.awesome.rotate.css"/>
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_5823e769f3ff4a98894cd54239d5cc1d {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+            </style>
+        
+</head>
+<body>    
+    
+            <div class="folium-map" id="map_5823e769f3ff4a98894cd54239d5cc1d" ></div>
+        
+</body>
+<script>    
+    
+            var map_5823e769f3ff4a98894cd54239d5cc1d = L.map(
+                "map_5823e769f3ff4a98894cd54239d5cc1d",
+                {
+                    center: [37.7790262, -122.4199061],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 12,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_7be0709588de42cc861419368186963f = L.tileLayer(
+                "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "Data by \u0026copy; \u003ca href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_5823e769f3ff4a98894cd54239d5cc1d);
+        
+    
+            var circle_marker_7dee7df1d2df499d90819c2f7759e7af = L.circleMarker(
+                [37.75757648865586, -122.4395389776779],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3186cc", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_5823e769f3ff4a98894cd54239d5cc1d);
+        
+    
+        var popup_9c8d347c5083441c963c8ad93ac76252 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_3a0b8812c92544789ef5deb645be8829 = $(`<div id="html_3a0b8812c92544789ef5deb645be8829" style="width: 100.0%; height: 100.0%;">Cluster 0, 38 gyms</div>`)[0];
+            popup_9c8d347c5083441c963c8ad93ac76252.setContent(html_3a0b8812c92544789ef5deb645be8829);
+        
+
+        circle_marker_7dee7df1d2df499d90819c2f7759e7af.bindPopup(popup_9c8d347c5083441c963c8ad93ac76252)
+        ;
+
+        
+    
+    
+            var circle_marker_928f45daa3984584953d1cc41bf00d2d = L.circleMarker(
+                [37.78250487733484, -122.4139797701096],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3186cc", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_5823e769f3ff4a98894cd54239d5cc1d);
+        
+    
+        var popup_193fd3c71e2047b69d298d7219d50b3c = L.popup({"maxWidth": "100%"});
+
+        
+            var html_2c2a742b2e5441a097474ab843adfa60 = $(`<div id="html_2c2a742b2e5441a097474ab843adfa60" style="width: 100.0%; height: 100.0%;">Cluster 1, 36 gyms</div>`)[0];
+            popup_193fd3c71e2047b69d298d7219d50b3c.setContent(html_2c2a742b2e5441a097474ab843adfa60);
+        
+
+        circle_marker_928f45daa3984584953d1cc41bf00d2d.bindPopup(popup_193fd3c71e2047b69d298d7219d50b3c)
+        ;
+
+        
+    
+    
+            var circle_marker_49128c5f2a154de39772e6e6b995e1d0 = L.circleMarker(
+                [37.75862479015407, -122.44163784473993],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3186cc", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_5823e769f3ff4a98894cd54239d5cc1d);
+        
+    
+        var popup_652708e624b846a49711fbcbad249113 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_cc51cc5c163840d1acd2423e33ca47c0 = $(`<div id="html_cc51cc5c163840d1acd2423e33ca47c0" style="width: 100.0%; height: 100.0%;">Cluster 2, 0 gyms</div>`)[0];
+            popup_652708e624b846a49711fbcbad249113.setContent(html_cc51cc5c163840d1acd2423e33ca47c0);
+        
+
+        circle_marker_49128c5f2a154de39772e6e6b995e1d0.bindPopup(popup_652708e624b846a49711fbcbad249113)
+        ;
+
+        
+    
+    
+            var circle_marker_369dbbd50c1e46579fe637c34829ea3b = L.circleMarker(
+                [37.764865571886375, -122.442029009414],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3186cc", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_5823e769f3ff4a98894cd54239d5cc1d);
+        
+    
+        var popup_77bb5fde371440c39b2366df94c326d8 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_4049cb7f0b18432c85ce25b08336d4b9 = $(`<div id="html_4049cb7f0b18432c85ce25b08336d4b9" style="width: 100.0%; height: 100.0%;">Cluster 3, 52 gyms</div>`)[0];
+            popup_77bb5fde371440c39b2366df94c326d8.setContent(html_4049cb7f0b18432c85ce25b08336d4b9);
+        
+
+        circle_marker_369dbbd50c1e46579fe637c34829ea3b.bindPopup(popup_77bb5fde371440c39b2366df94c326d8)
+        ;
+
+        
+    
+    
+            var circle_marker_a00db298830d4020b43d227227e1ccf3 = L.circleMarker(
+                [37.758476574470016, -122.43402097390266],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3186cc", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_5823e769f3ff4a98894cd54239d5cc1d);
+        
+    
+        var popup_b969d7e3ce7f44868c596ef20619d6a3 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_a19d4f970341456aab6e9ef4c83d0a46 = $(`<div id="html_a19d4f970341456aab6e9ef4c83d0a46" style="width: 100.0%; height: 100.0%;">Cluster 4, 25 gyms</div>`)[0];
+            popup_b969d7e3ce7f44868c596ef20619d6a3.setContent(html_a19d4f970341456aab6e9ef4c83d0a46);
+        
+
+        circle_marker_a00db298830d4020b43d227227e1ccf3.bindPopup(popup_b969d7e3ce7f44868c596ef20619d6a3)
+        ;
+
+        
+    
+    
+            var circle_marker_75b5d90b4c7445138027be55964310bd = L.circleMarker(
+                [37.752511328756945, -122.43758107965095],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3186cc", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_5823e769f3ff4a98894cd54239d5cc1d);
+        
+    
+        var popup_161953b6f0714d48a02f142bad16774f = L.popup({"maxWidth": "100%"});
+
+        
+            var html_28efe0c1c7a442daa1be99c703f2a011 = $(`<div id="html_28efe0c1c7a442daa1be99c703f2a011" style="width: 100.0%; height: 100.0%;">Cluster 5, 42 gyms</div>`)[0];
+            popup_161953b6f0714d48a02f142bad16774f.setContent(html_28efe0c1c7a442daa1be99c703f2a011);
+        
+
+        circle_marker_75b5d90b4c7445138027be55964310bd.bindPopup(popup_161953b6f0714d48a02f142bad16774f)
+        ;
+
+        
+    
+    
+            var circle_marker_b88a5ea7337f4f8a9b3e8e093c598b3a = L.circleMarker(
+                [37.778950021040885, -122.39870744555327],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3186cc", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_5823e769f3ff4a98894cd54239d5cc1d);
+        
+    
+        var popup_09fd1f3098024702ac111430cdf7fd4e = L.popup({"maxWidth": "100%"});
+
+        
+            var html_927d8cb40aec463598f29dac48bc22d8 = $(`<div id="html_927d8cb40aec463598f29dac48bc22d8" style="width: 100.0%; height: 100.0%;">Cluster 6, 16 gyms</div>`)[0];
+            popup_09fd1f3098024702ac111430cdf7fd4e.setContent(html_927d8cb40aec463598f29dac48bc22d8);
+        
+
+        circle_marker_b88a5ea7337f4f8a9b3e8e093c598b3a.bindPopup(popup_09fd1f3098024702ac111430cdf7fd4e)
+        ;
+
+        
+    
+    
+            var circle_marker_750041b75e644536ae660cdddf6f450e = L.circleMarker(
+                [37.76035293960399, -122.433763502072],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3186cc", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_5823e769f3ff4a98894cd54239d5cc1d);
+        
+    
+        var popup_d0e02cac68294e82b00901edd4891d02 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_94c53a9ecb314d68af06d323ae978987 = $(`<div id="html_94c53a9ecb314d68af06d323ae978987" style="width: 100.0%; height: 100.0%;">Cluster 7, 25 gyms</div>`)[0];
+            popup_d0e02cac68294e82b00901edd4891d02.setContent(html_94c53a9ecb314d68af06d323ae978987);
+        
+
+        circle_marker_750041b75e644536ae660cdddf6f450e.bindPopup(popup_d0e02cac68294e82b00901edd4891d02)
+        ;
+
+        
+    
+    
+            var circle_marker_6678d2fb77304854ac895c91ffc81bc4 = L.circleMarker(
+                [37.794835000000035, -122.41480999999996],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3186cc", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_5823e769f3ff4a98894cd54239d5cc1d);
+        
+    
+        var popup_0ded8cdffa30436faaa3dc26433cf2c0 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_c5c46aa7a3414c84bdffc3e7106711a4 = $(`<div id="html_c5c46aa7a3414c84bdffc3e7106711a4" style="width: 100.0%; height: 100.0%;">Cluster 8, 14 gyms</div>`)[0];
+            popup_0ded8cdffa30436faaa3dc26433cf2c0.setContent(html_c5c46aa7a3414c84bdffc3e7106711a4);
+        
+
+        circle_marker_6678d2fb77304854ac895c91ffc81bc4.bindPopup(popup_0ded8cdffa30436faaa3dc26433cf2c0)
+        ;
+
+        
+    
+    
+            var circle_marker_93779c4faee440ce8389bbca926bab8e = L.circleMarker(
+                [37.96586539774402, -121.72244718758742],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3186cc", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_5823e769f3ff4a98894cd54239d5cc1d);
+        
+    
+        var popup_c614ecc503d4470c901b459bc26683fe = L.popup({"maxWidth": "100%"});
+
+        
+            var html_a40c6e945af54a9eb2c034d75e2fd4df = $(`<div id="html_a40c6e945af54a9eb2c034d75e2fd4df" style="width: 100.0%; height: 100.0%;">Cluster 9, 0 gyms</div>`)[0];
+            popup_c614ecc503d4470c901b459bc26683fe.setContent(html_a40c6e945af54a9eb2c034d75e2fd4df);
+        
+
+        circle_marker_93779c4faee440ce8389bbca926bab8e.bindPopup(popup_c614ecc503d4470c901b459bc26683fe)
+        ;
+
+        
+    
+</script>
